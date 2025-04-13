@@ -1,7 +1,5 @@
 -- Dylan Long 4.11.25
 
-
-session.execute("""
 CREATE KEYSPACE IF NOT EXISTS sales
 
 // Load portion of ELT
@@ -21,4 +19,3 @@ CREATE TABLE IF NOT EXISTS sales.raw_sales_data (
     total_cost TEXT,
     total_profit TEXT
     )
-""")
