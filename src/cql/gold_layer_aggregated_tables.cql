@@ -9,6 +9,7 @@ CREATE TABLE IF NOT EXISTS sales.avg_profit_by_item_type (
 );
 
 
+
 CREATE TABLE IF NOT EXISTS sales.revenue_profit_by_region_month (
     region TEXT,
     month TEXT, 

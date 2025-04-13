@@ -47,5 +47,3 @@ for index, row in df.iterrows():
         print(f"Error inserting row with Order ID {row['Order ID']}: {e}")
 
 print("Raw data loaded successfully.")
-
-#cluster.shutdown()

@@ -1,11 +1,7 @@
--- Dylan Long 4.11.25
+-- Dylan Long - 4.11.25
 
 -- Gold layer denormalization of data 
 -- Tables optimized for queries
-
-
--- Create query optimized tables
-session.execute("""
 
 -- Region specific queries
   CREATE TABLE IF NOT EXISTS sales.sales_by_region_date(
@@ -22,9 +18,6 @@ session.execute("""
     total_profit FLOAT,
     PRIMARY KEY ((region, order_date), order_id)
     )
-""")
-
-session.execute("""
 
 -- Country specific queries
   CREATE TABLE IF NOT EXISTS sales.sales_by_country(
@@ -41,9 +34,7 @@ session.execute("""
     total_profit DECIMAL,
     PRIMARY KEY ((region, country), order_date, order_id)
     )
-""")
 
-session.execute("""
 
 -- Order specific queries
   CREATE TABLE IF NOT EXISTS sales.order_details(
@@ -63,9 +54,7 @@ session.execute("""
     total_profit DECIMAL,
     PRIMARY KEY (order_id)
     )
-""")
 
-session.execute("""
 
 -- Item specific queries
   CREATE TABLE IF NOT EXISTS sales.sales_by_item_type (
@@ -82,7 +71,3 @@ session.execute("""
     total_profit DECIMAL,
     PRIMARY KEY ((item_type), order_date, order_id)
     )
-
- """ )
-
-cluster.shutdown()

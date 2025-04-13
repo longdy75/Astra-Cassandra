@@ -1,10 +1,5 @@
 -- Dylan Long 4.11.25
 
-from python.db_config import get_cassandra_session
-
--- Setup session
-session = get_cassandra_session()
-
 
 session.execute("""
 CREATE KEYSPACE IF NOT EXISTS sales
@@ -25,4 +20,5 @@ CREATE TABLE IF NOT EXISTS sales.raw_sales_data (
     total_revenue TEXT,
     total_cost TEXT,
     total_profit TEXT
+    )
 """)

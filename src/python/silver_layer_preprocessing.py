@@ -67,6 +67,3 @@ for index, row in df.iterrows():
         print(f"Error inserting row with Order ID {row['order_id']}: {e}")
 
 print("Data cleaned and reinserted successfully.")
-
-# Close the connection
-# cluster.shutdown()

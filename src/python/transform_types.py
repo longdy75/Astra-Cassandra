@@ -45,6 +45,3 @@ for row in rows:
         print(f"Error transforming row with Order ID {row.order_id}: {e}")
 
 print("Transformation complete.")
-
-# Close the connection
-#cluster.shutdown()
