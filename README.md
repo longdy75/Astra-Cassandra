@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Astra-Cassandra
 Cassandra Operations
 =======
@@ -6,4 +5,3 @@ Cassandra Operations
  
 ## Dylan Long
 ## 4/12/25
->>>>>>> master
