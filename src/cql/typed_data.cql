@@ -1,4 +1,4 @@
--- Dylan Long 4.12.25
+-- Dylan Long - 4.12.25
 CREATE TABLE IF NOT EXISTS sales.typed_data (
     order_id INT PRIMARY KEY,
     region TEXT,
